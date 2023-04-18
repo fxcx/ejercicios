@@ -1,9 +1,9 @@
-function eliminarFrutas(arreglo) {
-    if (arreglo.length < 5) {                         // si la longitud es menor de 5
+function eliminarFrutas(frutas) {
+    if (frutas.length < 5) {                         // si la longitud es menor de 5
       return "Error: el arreglo debe tener al menos 5 elementos";
     } else {                                         
-      arreglo.splice(-3);                             //si no uso el metodo splice para eliminar, por que si seria posible
-      return arreglo;
+      frutas.splice(-3);                             //si no uso el metodo splice para eliminar, por que si seria posible
+      return frutas;
     }
   }
 
