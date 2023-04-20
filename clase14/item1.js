@@ -6,8 +6,8 @@ const CalculateTotal = (items, tax, discount) => {
     valueTotal += item;
   });
 
-  if (valueTotal * tax)
-  if (valueTotal * discount)
+  if (valueTotal -= valueTotal * tax) console.log(valueTotal);
+  if (valueTotal -= valueTotal  * discount) console.log(valueTotal);
   
   
   return valueTotal.toFixed(2);
