@@ -1,4 +1,4 @@
-const CalculateTotal = (items, impuesto, descuento) => {
+const CalculateTotal = (items, tax, discount) => {
     
   let valueTotal = 0;
 
@@ -6,18 +6,18 @@ const CalculateTotal = (items, impuesto, descuento) => {
     valueTotal += item;
   });
 
-  if (valueTotal * impuesto)
-  if (valueTotal * descuento)
+  if (valueTotal * tax)
+  if (valueTotal * discount)
   
   
   return valueTotal.toFixed(2);
 }
 
 const items = [10, 20, 30];
-let impuesto = 0.05;
-let descuento = 0.10;
+let tax = 0.05;
+let discount = 0.10;
 
-const elProfeEstuvoAqui = CalculateTotal(items, impuesto, descuento);
+const elProfeEstuvoAqui = CalculateTotal(items, tax, discount);
 console.log("Total: " + elProfeEstuvoAqui);
 
 
