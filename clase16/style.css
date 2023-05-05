@@ -1,0 +1,351 @@
+/*custom properties*/
+:root{
+  --color-primario : #181818;
+  --color-secundario : white;
+
+
+/*tipografia*/
+
+--tipo-principal : Arial, Helvetica, sans-serif;
+--tipo-secundaria :verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --color-primario : #181818;
+    --color-secundario : white;
+  
+  
+  }
+
+}
+
+/*reset de margin y padding*/
+
+* {
+   margin: 0;
+   padding: 0; 
+   border: 0;
+   box-sizing: border-box;
+   vertical-align: baseline; 
+}
+
+
+/*evitar problemas con imagenes*/
+
+img , picture, video, iframe, figure{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*reset de enlaces para funcionar como cajas*/
+
+a {
+  display: block;
+
+}
+
+/*exepto las que esten dentro de parrafos*/
+
+p a {
+  display: inline;
+}
+
+/*sacar los puntitos*/
+
+li {
+  list-style-type: none;
+    
+}
+
+/*scroll suave*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*desactivar estilos x defecto / principales etiquetas de texto*/
+
+h1, h2 , h3, h4 , h5 , h6, p, span, a, strong, blockquote, i, b, u , em{
+  
+  font-weight: inherit;
+  font-style: none;
+  color:inherit;
+}
+
+/*color de texto seleeccionado*/
+
+::selection {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+/*nivelar problemas de tipografia y colocacion de formulario*/
+form, input, textarea, select, button, label{
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+
+}
+
+/*reset de tablas */
+table, tr ,td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*configuracion de la tipografia para toda la web*/
+
+body {
+
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+}
+
+
+/*  nav    */
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #52dab8;
+  width: 100%;
+  height: 10em;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.nav__item {
+  margin: 0 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-size: 4em;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #ff9900;
+}
+
+.nav.scrolled {
+  background-color: rgba(104, 78, 159, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav.scrolled .nav__link:hover {
+  color: #333;
+}
+
+
+/*perfil*/
+
+.perfil {
+    
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    background-color: rgb(225, 228, 230);
+}
+
+.title {
+  font-size: 20px;
+  padding: 100px;
+  margin:100;
+  letter-spacing: 5px;
+
+ 
+}
+
+/* hard skill*/
+
+.skills {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .skills-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills-list-item {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+/*skill personales*/
+
+.skills-list--item {
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+/*  sobre mi */
+
+
+.about {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about__article {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  
+  .about__article-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  
+/*education*/
+
+.education {
+    float: center;
+    width: 50%;
+    padding-right: 30px;
+  }
+  
+  .education__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .education__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .education__list-item {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+
+
+/*  formulario */
+
+.contact {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contact__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact__form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact__form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact__form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .contact__form-group input,
+  .contact__form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .contact__form-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .contact__form-button:hover {
+    background-color: #111;
+  }
+  
+
+
+
+
+/* footer*/
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer__links {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .footer__link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  

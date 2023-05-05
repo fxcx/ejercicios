@@ -19,6 +19,3 @@ let discount = 0.10;
 
 const elProfeEstuvoAqui = CalculateTotal(items, tax, discount);
 console.log("Total: " + elProfeEstuvoAqui);
-
-
-  
