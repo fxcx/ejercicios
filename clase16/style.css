@@ -85,7 +85,6 @@ h1, h2 , h3, h4 , h5 , h6, p, span, a, strong, blockquote, i, b, u , em{
 form, input, textarea, select, button, label{
   font-family: inherit;
   font-size: inherit;
-  hyphens: auto;
   background-color: transparent;
   display: block;
   color: inherit;
