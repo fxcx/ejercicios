@@ -1,5 +1,10 @@
-// quiero todos los elementos input de tipo texto
+// capturar valor de los imputs
 const inputsTexto = document.querySelectorAll('input[type="text"]');
+const password = document.querySelectorAll('input[tipe="password"]');
+const check = document.querySelector('input[name="newsletter"]');
+
+
+
 
 // foreach se activa cada vez que ingresa un numero
 inputsTexto.forEach (input => {
@@ -10,9 +15,10 @@ inputsTexto.forEach (input => {
 });
 
 
+
 // checkbox
 
-const check = document.querySelector('input[name="newsletter"]');
+
 
 check.addEventListener('change',(event) => {
     console.log(event.target.checked); // checked para que dvuelva un booleano // usar para checkbox
