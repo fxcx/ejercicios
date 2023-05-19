@@ -1,6 +1,6 @@
 section {
-    background-color: rgb(157, 191, 180);
-    display: flex;
+    background-color: rgb(165, 206, 193);
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 120vh;
