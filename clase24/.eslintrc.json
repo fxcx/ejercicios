@@ -10,6 +10,7 @@
   },
   "rules": {
     "no-multiple-empty-lines": "off",
-    "semi":"off"
+    "semi":"off",
+    "eol-last":"off"
   }
 }
