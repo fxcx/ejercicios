@@ -2,10 +2,11 @@
   "name": "clase24",
   "version": "1.0.0",
   "description": "",
-  "main": "promise.js",
+  "type":"module",
+  "main": "main.js",
   "scripts": {
-    "start": "node promise.js",
-    "dev": "node --watch promise.js"
+    "start": "node main.js",
+    "dev": "node --watch main.js"
   },
   "keywords": [],
   "author": "facu",
