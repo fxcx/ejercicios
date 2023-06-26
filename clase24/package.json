@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "type":"module",
-  "main": "main.js",
+  "main": "ejercicio2.js",
   "scripts": {
-    "start": "node main.js",
-    "dev": "node --watch main.js"
+    "start": "node ejercicio2.js",
+    "dev": "node --watch ejercicio2.js"
   },
   "keywords": [],
   "author": "facu",
