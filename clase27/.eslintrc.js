@@ -11,8 +11,5 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    "no-multiple-empty-lines": "off",
-    "semi":"off",
-    "eol-last":"off"
   }
 }
